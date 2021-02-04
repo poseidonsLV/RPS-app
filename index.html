@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class="header-right">
+        <div class="score">
+          <h3>PLAYER SCORE</h3>
+          <h2 class="score-player">0</h2>
+        </div>
+        <div class="score">
+          <h3>ROBOT SCORE</h3>
+          <h2 class="score-robot">0</h2>
+        </div>
+      </div>
+    </header>
+    <div class="chooses">
+      <div class="triangle">
+        <img
+          class="choose-item"
+          id="rock"
+          src="./images/icon-rock.svg"
+          alt="rock"
+        />
+        <img
+          class="choose-item"
+          id="paper"
+          src="./images/icon-paper.svg"
+          alt="paper"
+        />
+        <img
+          class="choose-item"
+          id="scissors"
+          src="./images/icon-scissors.svg"
+          alt="scissors"
+        />
+      </div>
+    </div>
+    <div class="chooses-fighting">
+      <div id="fighting" class="fighting-left">
+        <h2>YOU PICKED</h2>
+        <img
+          id="fighting-img"
+          class="fighting-left"
+          src="./images/icon-rock.svg"
+          alt=""
+        />
+      </div>
+      <div class="fighting-middle">
+        <h1 class="winner-side-text"></h1>
+        <button class="play-again-btn">Play Again</button>
+      </div>
+      <div id="fighting" class="fighting-right">
+        <h2>ROBOT PICKED</h2>
+        <img
+          id="fighting-img"
+          class="fighting-right"
+          src="./images/icon-rock.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

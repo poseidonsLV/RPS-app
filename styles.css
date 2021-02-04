@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background: hsl(214, 47%, 23%);
+}
+header {
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 45px auto;
+  padding: 15px 25px;
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left {
+  line-height: 30px;
+}
+.header-right {
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+}
+.header-right h3 {
+  font-size: 1.1rem;
+}
+.header-right .score {
+  padding: 10px;
+  border-radius: 10px;
+  color: hsl(229, 64%, 46%);
+  background: white;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 3rem;
+  color: hsl(229, 25%, 31%);
+}
+
+.chooses {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.chooses.hide {
+  display: none;
+}
+.triangle {
+  width: 350px;
+  height: 300px;
+  background-image: url("./images/bg-triangle.svg");
+  background-size: cover;
+  position: relative;
+}
+.choose-item {
+  position: absolute;
+  background: white;
+  padding: 40px;
+  border-radius: 60%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.choose-item:hover {
+  transform: scale(1.03);
+}
+#rock {
+  border: 20px solid hsl(349, 71%, 52%);
+  left: -20px;
+  top: -55px;
+}
+#paper {
+  border: 20px solid hsl(230, 89%, 62%);
+  right: -20px;
+  top: -55px;
+}
+#scissors {
+  border: 20px solid hsl(39, 89%, 49%);
+  left: 90px;
+  bottom: -35px;
+}
+#fighting-img.choose-item.show {
+  display: block;
+}
+.chooses-fighting {
+  display: none;
+}
+
+.rock {
+  border: 20px solid hsl(349, 71%, 52%);
+}
+.paper {
+  border: 20px solid hsl(230, 89%, 62%);
+}
+.scissors {
+  border: 20px solid hsl(39, 89%, 49%);
+}
+
+#fighting-img {
+  position: relative;
+  background: white;
+  padding: 50px;
+  width: 250px;
+  object-fit: contain;
+  border-radius: 60%;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.chooses-fighting.show {
+  display: flex;
+  max-width: 1000px;
+  margin: 100px auto;
+  justify-content: space-between;
+}
+.chooses-fighting h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+#fighting {
+  text-align: center;
+}
+.fighting-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.winner-side-text {
+  color: white;
+  font-size: 2rem;
+}
+.fighting-middle button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+.fighting-middle button:hover {
+  transform: scale(1.03);
+  background: rgb(0, 0, 0, 0.1);
+}
